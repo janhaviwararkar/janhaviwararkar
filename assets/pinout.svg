@@ -22,7 +22,6 @@
 <circle cx="394" cy="70" r="7" fill="none" stroke="#243044" stroke-width="2"/>
 <text x="500" y="237.0" text-anchor="middle" class="chipT">JW-01</text>
 <text x="500" y="263.0" text-anchor="middle" class="chipS">EMBEDDED · IoT · EV</text>
-<text x="500" y="283.0" text-anchor="middle" class="chipS" style="font-size:10px">amber pins = daily drivers</text>
 <circle cx="604" cy="420" r="4.5" fill="#2FB36B" class="led"/>
 <text x="594" y="423.5" text-anchor="end" class="chipS" style="font-size:9px">PWR</text>
 </svg>

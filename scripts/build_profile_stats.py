@@ -253,7 +253,7 @@ def ride(days, total):
 </style>
 <rect width="{W}" height="{H}" rx="14" fill="{BG}"/>
 <text x="{ox}" y="30" class="k" style="fill:{AMBER}">COMMIT RIDE</text>
-<text x="{W - ox}" y="30" text-anchor="end" class="k">{total} contributions · every commit charges a cell</text>
+<text x="{W - ox}" y="30" text-anchor="end" class="k">{total} contributions · last 12 months</text>
 {rects}
 <line x1="{ox}" y1="{track}" x2="{W - ox}" y2="{track}" stroke="{RULE}" stroke-width="2" stroke-dasharray="6 6"/>
 {scooter}

@@ -58,5 +58,3 @@ Most of my days go into range estimation, CAN bus diagnostics, BMS telemetry and
 <p align="center">
   <img src="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/ride.svg" width="100%" alt="A scooter riding along the contribution calendar, charging each day with commits"/>
 </p>
-
-<p align="center"><sub>Everything above is hand-drawn SVG. The activity cluster and commit ride are rebuilt every day by a small Python script in this repo.</sub></p>
