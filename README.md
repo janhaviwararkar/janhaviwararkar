@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="Janhavi Wararkar, Junior Embedded Engineer. Embedded software and firmware for electric vehicles."/>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg"><img src="assets/header.svg" width="100%" alt="Janhavi Wararkar, Junior Embedded Engineer. Embedded software and firmware for electric vehicles."/></picture>
 </p>
 
 <p align="center">
-  <a href="https://janhaviwararkar.github.io"><img src="assets/btn-portfolio.svg" height="46" alt="Portfolio"/></a>
-  <a href="https://www.linkedin.com/in/janhavimanojwararkar/"><img src="assets/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
-  <a href="mailto:janhaviwararkar10@gmail.com"><img src="assets/btn-email.svg" height="46" alt="Email"/></a>
+  <a href="https://janhaviwararkar.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="assets/btn-portfolio-light.svg"><img src="assets/btn-portfolio.svg" height="46" alt="Portfolio"/></picture></a>
+  <a href="https://www.linkedin.com/in/janhavimanojwararkar/"><picture><source media="(prefers-color-scheme: light)" srcset="assets/btn-linkedin-light.svg"><img src="assets/btn-linkedin.svg" height="46" alt="LinkedIn"/></picture></a>
+  <a href="mailto:janhaviwararkar10@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/btn-email-light.svg"><img src="assets/btn-email.svg" height="46" alt="Email"/></picture></a>
 </p>
 
 ### `> whoami`
@@ -17,13 +17,13 @@ Most of my days go into range estimation, CAN bus diagnostics, BMS telemetry and
 ### `> ./lab --live`
 
 <p align="center">
-  <img src="assets/lab.svg" width="100%" alt="Animated illustration of the IoT and R&D team at work on an electric scooter"/>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/lab-light.svg"><img src="assets/lab.svg" width="100%" alt="Animated illustration of the IoT and R&D team at work on an electric scooter"/></picture>
 </p>
 
 ### `> cat pinout.txt`
 
 <p align="center">
-  <img src="assets/pinout.svg" width="100%" alt="Tech stack drawn as a chip pinout. Languages: C, C++, Embedded C, Python, Verilog HDL. Buses: CAN, RS-485/MODBUS, I2C, SPI, UART, MQTT, LoRaWAN, BLE. Hardware: ESP32, Seeed XIAO ESP32S3, Raspberry Pi 4B, STM32, Arduino. Tools: FreeRTOS, ESP-IDF/PlatformIO, Linux, Git, VS Code, Claude, Antigravity, CANTest/USBCAN-2E."/>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/pinout-light.svg"><img src="assets/pinout.svg" width="100%" alt="Tech stack drawn as a chip pinout. Languages: C, C++, Embedded C, Python, Verilog HDL. Buses: CAN, RS-485/MODBUS, I2C, SPI, UART, MQTT, LoRaWAN, BLE. Hardware: ESP32, Seeed XIAO ESP32S3, Raspberry Pi 4B, STM32, Arduino. Tools: FreeRTOS, ESP-IDF/PlatformIO, Linux, Git, VS Code, Claude, Antigravity, CANTest/USBCAN-2E."/></picture>
 </p>
 
 ### `> ls work/`
@@ -52,9 +52,9 @@ Most of my days go into range estimation, CAN bus diagnostics, BMS telemetry and
 ### `> dmesg | tail`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/dashboard.svg" width="100%" alt="Activity cluster: contributions gauge, streaks, 30-day charge and languages"/>
+  <picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/dashboard-light.svg"><img src="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/dashboard.svg" width="100%" alt="Activity cluster: contributions gauge, streaks, 30-day charge and languages"/></picture>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/ride.svg" width="100%" alt="A scooter riding along the contribution calendar, charging each day with commits"/>
+  <picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/ride-light.svg"><img src="https://raw.githubusercontent.com/janhaviwararkar/janhaviwararkar/output/ride.svg" width="100%" alt="A scooter riding along the contribution calendar, charging each day with commits"/></picture>
 </p>

@@ -23,6 +23,20 @@ INK, MUTED, AMBER, BLUE, GREEN = "#E6EAF1", "#93A0B5", "#F0B03E", "#63A0FF", "#2
 SANS = "'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 MONO = "'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace"
 RM = "@media (prefers-reduced-motion: reduce){ *{animation:none !important} }"
+
+
+LIGHT = {
+    "#0B111A": "#F6F7F3", "#111925": "#FFFFFF", "#172131": "#E8EAE3", "#243044": "#D3D7CE",
+    "#E6EAF1": "#121826", "#93A0B5": "#586173", "#F0B03E": "#B8760C", "#63A0FF": "#2A66C9",
+    "#2FB36B": "#23945A", "#161E2B": "#E6E9E1", "#5A4318": "#F1DDB0", "#8C6A22": "#E2B75E",
+    "#C98F2A": "#C98A1F", "#FFE3A3": "#8A5A08", "#2A3B55": "#CBD3DF",
+}
+
+
+def to_light(svg):
+    """Swap the dark palette for the light one (GitHub light theme)."""
+    import re as _re
+    return _re.sub(r"#[0-9A-Fa-f]{6}", lambda m: LIGHT.get(m.group(0).upper(), m.group(0)), svg)
 LEVEL = ["#161E2B", "#5A4318", "#8C6A22", "#C98F2A", "#F0B03E"]
 LANG_COLORS = [AMBER, BLUE, GREEN, "#E5484D", "#B07CFF", "#5CC8C8", MUTED]
 
@@ -265,10 +279,15 @@ def main():
     days, total = calendar()
     cur, longest, active, last30 = streaks(days)
     repos, langs = languages()
-    with open(os.path.join(OUT, "dashboard.svg"), "w", encoding="utf-8") as f:
-        f.write(dashboard(total, cur, longest, active, last30, repos, langs))
-    with open(os.path.join(OUT, "ride.svg"), "w", encoding="utf-8") as f:
-        f.write(ride(days, total))
+    outputs = {
+        "dashboard": dashboard(total, cur, longest, active, last30, repos, langs),
+        "ride": ride(days, total),
+    }
+    for name, svg in outputs.items():
+        with open(os.path.join(OUT, f"{name}.svg"), "w", encoding="utf-8") as f:
+            f.write(svg)
+        with open(os.path.join(OUT, f"{name}-light.svg"), "w", encoding="utf-8") as f:
+            f.write(to_light(svg))
     print(f"days={len(days)} total={total} streak={cur}/{longest} active={active} last30={last30} repos={repos} langs={langs}")
 
 
