@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320">
+<style>
+.k{font-family:'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;letter-spacing:1.8px;fill:#93A0B5}
+.v{font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:800;font-size:40px;fill:#E6EAF1}
+.u{font-family:'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;fill:#93A0B5}
+.tick{font-family:'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;font-size:10px;fill:#93A0B5}
+.big{font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:800;font-size:34px;fill:#E6EAF1}
+.leg{font-family:'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;fill:#E6EAF1}
+.foot{font-family:'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;font-size:10px;fill:#93A0B5}
+.needle{transform-origin:170px 172px;animation:sweep 2.4s cubic-bezier(.2,.8,.2,1) forwards, idle 3s ease-in-out 2.4s infinite alternate;transform:rotate(-225deg)}
+@keyframes sweep{from{transform:rotate(-225deg)}to{transform:rotate(var(--a))}}
+@keyframes idle{from{transform:rotate(var(--a))}to{transform:rotate(calc(var(--a) - 2.5deg))}}
+.arc{stroke-dasharray:546.6;stroke-dashoffset:546.6;animation:arc 2.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes arc{to{stroke-dashoffset:382.6}}
+.seg{opacity:.15;animation:seg .4s ease-out forwards, glow 2.6s ease-in-out 2s infinite alternate}
+@keyframes seg{to{opacity:1}} @keyframes glow{from{opacity:1}to{opacity:.55}}
+.fade{opacity:0;animation:fade .7s ease-out forwards} @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){ *{animation:none !important} }
+</style>
+<rect width="1000" height="320" rx="14" fill="#0B111A"/>
+<text x="24" y="30" class="k" style="fill:#F0B03E">ACTIVITY CLUSTER · updated 26 Sep 2026</text>
+<path d="M88.0,254.0 A116,116 0 1 1 252.0,254.0" fill="none" stroke="#172131" stroke-width="8" stroke-linecap="round"/>
+<path d="M88.0,254.0 A116,116 0 1 1 252.0,254.0" fill="none" stroke="#F0B03E" stroke-width="8" stroke-linecap="round" class="arc"/>
+<line x1="106.4" y1="235.6" x2="96.5" y2="245.5" stroke="#E6EAF1" stroke-width="2.4"/><text x="117.7" y="228.3" text-anchor="middle" class="tick">0</text><line x1="78.7" y1="201.7" x2="71.1" y2="204.1" stroke="#93A0B5" stroke-width="1.4"/><line x1="75.2" y1="157.0" x2="67.3" y2="155.7" stroke="#93A0B5" stroke-width="1.4"/><line x1="92.3" y1="115.6" x2="85.9" y2="110.9" stroke="#93A0B5" stroke-width="1.4"/><line x1="126.4" y1="86.5" x2="122.8" y2="79.3" stroke="#93A0B5" stroke-width="1.4"/><line x1="170.0" y1="82.0" x2="170.0" y2="68.0" stroke="#E6EAF1" stroke-width="2.4"/><text x="170.0" y="102.0" text-anchor="middle" class="tick">25</text><line x1="213.6" y1="86.5" x2="217.2" y2="79.3" stroke="#93A0B5" stroke-width="1.4"/><line x1="247.7" y1="115.6" x2="254.1" y2="110.9" stroke="#93A0B5" stroke-width="1.4"/><line x1="264.8" y1="157.0" x2="272.7" y2="155.7" stroke="#93A0B5" stroke-width="1.4"/><line x1="261.3" y1="201.7" x2="268.9" y2="204.1" stroke="#93A0B5" stroke-width="1.4"/><line x1="233.6" y1="235.6" x2="243.5" y2="245.5" stroke="#E6EAF1" stroke-width="2.4"/><text x="222.3" y="228.3" text-anchor="middle" class="tick">50</text>
+<g class="needle" style="--a:-144.0deg"><path d="M156,172 L256,170 L256,174 Z" fill="#F0B03E"/></g>
+<circle cx="170" cy="172" r="11" fill="#172131" stroke="#F0B03E" stroke-width="3"/>
+<text x="170" y="230" text-anchor="middle" class="big">15</text>
+<text x="170" y="262" text-anchor="middle" class="u">contributions</text>
+<text x="170" y="276" text-anchor="middle" class="u">last 12 months</text>
+<line x1="330" y1="62" x2="330" y2="296" stroke="#243044"/>
+<g class="fade" style="animation-delay:0.20s"><text x="360" y="86" class="k">CURRENT STREAK</text><text x="360" y="128" class="v">0</text><text x="390" y="128" class="u">days</text></g><g class="fade" style="animation-delay:0.35s"><text x="535" y="86" class="k">LONGEST STREAK</text><text x="535" y="128" class="v">2</text><text x="565" y="128" class="u">days</text></g><g class="fade" style="animation-delay:0.50s"><text x="360" y="178" class="k">ACTIVE DAYS</text><text x="360" y="220" class="v">2</text><text x="390" y="220" class="u">last 12 months</text></g><g class="fade" style="animation-delay:0.65s"><text x="535" y="178" class="k">PUBLIC REPOS</text><text x="535" y="220" class="v">2</text><text x="565" y="220" class="u">owned</text></g>
+<line x1="715" y1="62" x2="715" y2="225" stroke="#243044"/>
+<text x="740" y="82" class="k">30-DAY CHARGE</text><rect x="740" y="94" width="212" height="74" rx="10" fill="none" stroke="#E6EAF1" stroke-width="2.5"/><rect x="952" y="118" width="10" height="26" rx="3" fill="#E6EAF1"/><rect x="750" y="104" width="15" height="54" rx="3" fill="#2FB36B" class="seg" style="animation-delay:0.50s"/><rect x="770" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:0.62s"/><rect x="790" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:0.74s"/><rect x="810" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:0.86s"/><rect x="830" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:0.98s"/><rect x="850" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:1.10s"/><rect x="870" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:1.22s"/><rect x="890" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:1.34s"/><rect x="910" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:1.46s"/><rect x="930" y="104" width="15" height="54" rx="3" fill="#172131" class="" style="animation-delay:1.58s"/><text x="740" y="206" class="v" style="font-size:30px">7%</text><text x="775" y="206" class="u">2 of 30 days with commits</text>
+<text x="360" y="252" class="k">LANGUAGES IN MY REPOS</text>
+<rect x="360" y="262" width="600" height="10" rx="5" fill="#172131"/>
+<clipPath id="ls"><rect x="360" y="262" width="600" height="10" rx="5"/></clipPath>
+<g clip-path="url(#ls)"><rect x="360.0" y="262" width="544.5" height="10" fill="#F0B03E"/><rect x="904.5" y="262" width="55.5" height="10" fill="#63A0FF"/></g>
+<circle cx="365" cy="292" r="4.5" fill="#F0B03E"/><text x="375" y="296" class="leg">HTML 91%</text><circle cx="465" cy="292" r="4.5" fill="#63A0FF"/><text x="475" y="296" class="leg">Python 9%</text>
+</svg>
